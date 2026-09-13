@@ -1,0 +1,175 @@
+/* -------------------------
+   CONFIGURACIÓN GENERAL
+------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+
+/* -------------------------
+   ENCABEZADO
+------------------------- */
+
+.encabezado {
+    background: linear-gradient(135deg, #d35400, #e67e22);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.encabezado h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    font-size: 20px;
+}
+
+
+/* -------------------------
+   NAVEGACIÓN
+------------------------- */
+
+.navegacion {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navegacion a:hover {
+    color: #f39c12;
+}
+
+
+/* -------------------------
+   SECCIONES
+------------------------- */
+
+.seccion {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.seccion h2 {
+    text-align: center;
+    color: #d35400;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+/* -------------------------
+   PRODUCTOS
+------------------------- */
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.producto {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto-info {
+    padding: 20px;
+}
+
+.producto-info h3 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.producto-info p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.producto-info span {
+    color: #d35400;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+
+/* -------------------------
+   RESPONSIVE
+------------------------- */
+
+@media (max-width: 600px) {
+
+    .encabezado h1 {
+        font-size: 32px;
+    }
+
+    .navegacion {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .navegacion a {
+        font-size: 14px;
+    }
+
+    .seccion {
+        margin: 30px auto;
+    }
+}
